@@ -1,0 +1,222 @@
+<!--menggunakan semantic element-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GalleryKu</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Galada|Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<!--header-->
+<header id="home">
+	<div class="bgwallpaper">
+			<h1 class="sapa">
+				Selamat Datang
+			</h1>
+			<h2 class="moto">
+				Galeri karya favorite Akbar Angkasa
+			</h2>
+	</div>
+</header>
+	<!--header-->
+	<!--NAV-->
+<nav>
+	<ul class="list-first"><!--flex-->
+		<li><a href="#home">Home</a></li>
+		<li><a href="#author">Tentang penulis</a></li>
+		<li><a href="#gallery">Galeri</a></li>
+		<li class="contact">kontak
+			<ul><!--dropdown-->
+				<li><a href="https://www.instagram.com/akbar_angkasa/?hl=id" target="blank">Instagram</a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=6282297008375&text=Halo%20Akbar%20Angkasa" target="blank">Whatsapp</a></li>
+			</ul><!--dropdown-->
+		</li><!--contact-->
+	</ul>
+</nav>
+
+<div class="wrapi">
+	<input type="checkbox" id="check" class="darkmode"/>
+</div>
+	<!--NAV-->
+	<!--DESCRIPTION-->
+<main>
+	<div class="description">
+		<div class="container"><!--anaknyaCOLUMN-->
+			<h1>Home</h1>
+			<div class="row"><!--anaknyaROW-->
+				<p>Kenapa Gallery? Gallery atau Galeri menurut KBBI adalah ruangan atau gedung tempat memamerkan benda atau karya seni, bedanya pada galeri saya ini menggunakan WEB sebagai medianya untuk memamerkan karya seni fotografi saya, berikut adalah beberapa hasil karya seni fotografi favorite saya.</p>
+			</div>		
+		</div><!--CONTAINER-->
+	</div>
+	<!--DESCRIPTION-->
+	<!--CONTENTGALLERY-->
+	<div id="gallery" class="contentgallery">
+		<h1>Galeri</h1>
+		<div class="bungkuscontainerthumb">
+			<div class="containerthumb"><!--anaknyaROW-->
+				<!--gambar1-->		
+				<div class="thumbnail"><!--ROW-->
+					<a href="#gambar1"><img src="assets/images/thumbnails/thumb1.jpg" alt="thumbnail" title="skateboardguy"></a>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+				</div>
+
+				<div id="gambar1" class="goverlay">
+					<a href="#gambar3" class="prev" title="prev">prev</a>
+					<img src="assets/images/gallery-images/gambar1.jpg">
+					<a href="#gambar2" class="next" title="next">next</a>
+					<a href="#close" title="close" class="close">x</a>
+				</div>
+				<!--gambar1-->	
+				<!--gambar2-->	
+				<div class="thumbnail">
+					<a href="#gambar2"><img src="assets/images/thumbnails/thumb2.jpg" alt="thumbnail" title="cooldudes"></a>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+				</div>
+
+				<div id="gambar2" class="goverlay">
+					<a href="#gambar1" class="prev" title="prev">prev</a>
+					<img src="assets/images/gallery-images/gambar2.jpg">
+					<a href="#gambar3" class="next" title="next">next</a>
+					<a href="#close" title="close" class="close">x</a>
+				</div>
+				<!--gambar2-->
+				<!--gambar3-->		
+				<div class="thumbnail">
+					<a href="#gambar3"><img src="assets/images/thumbnails/thumb3.jpg" alt="thumbnail" title="bellyfullguy"></a>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+				</div>
+
+				<div id="gambar3" class="goverlay">
+					<a href="#gambar2" class="prev" title="prev">prev</a>
+					<img src="assets/images/gallery-images/gambar3.jpg">
+					<a href="#gambar1" class="next" title="next">next</a>
+					<a href="#close" title="close" class="close">x</a>
+				</div>
+				<!--gambar3-->	
+			</div><!--containerthumb-->
+		</div><!--bungkuscontainerthumb-->
+	</div><!--gallery-->
+	<!--CONTENTGALLERY-->
+	<!--ASIDE-->
+	<aside id="author">
+			<div class="judul">
+				<h1>Penulis</h1>
+			</div>
+		<div class="bungkus"><!--anaknyabungkusROW-->
+			<div class="rowbaru"><!--anaknyaROWadalahCOLUMN-->
+				<a href="#gambar"><!--overlay-->	
+				<img src="assets/images/author/akbarangkasa.jpg" title="akbarangkasa" title="akbarangkasa" class="foto">
+				</a>
+				<span>akbar angkasa</span>
+			</div>
+
+			<div id="gambar"class="overlay">
+				<img src="assets/images/author/akbarangkasa.jpg">
+				<a href="#close" title="close">x</a>
+			</div>
+
+			<div class="rowbaru paragraf"><!--anaknyaROWadalahCOLUMN-->
+				<p>Akbar Angkasa atau biasa dipanggil Abay adalah seorang pemuda keturunan Sulawesi-Betawi lahir di Jakarta pada tanggal 12 Desember 2002. Memiliki hobi dalam bidang seni, teknologi dan olahraga </p>
+			</div><!--column-->
+		</div><!--bungkus--><!--row-->
+		<div class="more"><!--directionrow-->
+			<div class="wrap">
+				<h4>Hobi</h4>
+				<span>Fotografi</span>
+			</div>
+			<div class="wrap">
+				<h4>Tanggal Lahir</h4>
+				<span>12 Desember 2002</span>
+			</div>	
+		</div><!--more-->
+		<div class="rowemail">
+			<div class="wrap">
+				<h4>Email</h4>
+				<span>abay121202@gmail.com</span>
+			</div>	
+		</div>
+	</aside>
+	<!--ASIDE-->
+	<!--ARTICLE-->
+	<article>
+		<div class="ask">
+			<h3>Anda mungkin suka!</h3>
+		</div>
+		<article class="content">
+			<a href="../article html/apaituhtml.html" target="blank">
+				<span></span>
+				<h2>Apa itu HTML?</h2>
+				<img src="assets/images/article/bgarticle1.jpg">
+			</a>
+		</article>
+		<article class="content">
+			<a href="../article css/apaitucss.html" target="blank">
+				<span></span>
+				<h2>Apa itu CSS?</h2>
+				<img src="assets/images/article/bgarticle2.jpg">
+			</a>
+		</article>
+		<article class="content">
+			<a href="../article javascript/apaitujavascript.html" target="blank">
+				<span></span>
+				<h2 class="beda">Apa itu JavaScript?</h2>
+				<img src="assets/images/article/bgarticle3.jpg">
+			</a>				
+		</article>
+		<div class="clear"></div>
+	</article>
+	<!--ARTICLE-->
+		</div><!--penutup mx-auto-->
+	<form action="POST" data-netlify="true">
+		<div class="container">
+			<h1>Hubungi Kami</h1>
+			<div class="inputfield">
+				<label for="name">Nama: </label>
+				<input type="text" name="name" id="name" placeholder="name">
+			</div>
+			<div class="inputfield">
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" placeholder="email">
+			</div>
+			<div class="inputfield">
+				<label for="textarea">Pesan: </label>
+				<textarea id="textarea" name="message" placeholder="Message"></textarea>
+			</div>
+			<div class="inputfield">
+				<input type="file" name="myfile" id="myfile" placeholder="Upload file"></textarea>
+			</div>
+			<div class="inputfield">
+				<div data-netlify-recaptcha="true"></div>
+			</div>
+			<div class="inputfield">
+				<input type="submit" value="send">
+			</div>
+		</div>
+	</form>
+</main>
+
+<footer>
+	<div class="text">
+		<h3 class="thx">TERIMA KASIH</h3>
+		<h3>TELAH BERKUNJUNG</h3>
+	</div>
+	<div class="copyright">
+		Copyright 2020 Akbar Angkasa
+	</div>
+</footer>
+
+<script src="assets/script.js">
+</script>	
+</body>
+</html>
